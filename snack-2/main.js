@@ -13,11 +13,15 @@ const squadre = [
   { nome: "squadra6", punti: 0, falliSubiti: 0 },
   { nome: "squadra7", punti: 0, falliSubiti: 0 },
 ];
+
 //ciclo di array per squadre
+
 for (let i = 0; i < squadre.length; i++) {
   const squadra = squadre[i];
+
   //generatore random di numeri (falli)(math permette di svolgere funzioni algebriche, ceil arrotonda a numeri interi, random genera numeri random)
   squadra.falliSubiti = Math.ceil(Math.random() * 100);
+
   //generatore random di numeri(punti)
   squadra.punti = Math.ceil(Math.random() * 25);
 }
